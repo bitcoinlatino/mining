@@ -22,7 +22,7 @@
 
 ## BTCL Calendario de Recompensa:
 
-Token Height | MAZE Reward
+**Token Height | BTCL Reward**
 
 1-4319 | 800
 
@@ -43,7 +43,7 @@ Token Height | MAZE Reward
 34560< | ...
 
 
-## Introduction a la minería con el Minero BCHD
+## Introduction a la minería con el Minero BCHD y JT
 
 Este es un fork de la **`versión 0.0.4`** del minero oficial que se usa en Mistcoin www.mistcoin.org
 
@@ -51,7 +51,7 @@ Este es un fork de la **`versión 0.0.4`** del minero oficial que se usa en Mist
 
 * Este tutorial es para empezar a minar BTCL en windows.
 
-### 1.Instala los Paquetes
+### 1. Instala los Paquetes
 
 - Descarga e installa **[NodeJS](https://nodejs.org/en/)**
 - Descarga e installa **[Git](https://gitforwindows.org/)**
