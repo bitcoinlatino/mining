@@ -57,43 +57,102 @@ Este es un fork de la **`versión 0.0.4`** del minero oficial que se usa en Mist
 - Descarga e installa **[Git](https://gitforwindows.org/)**
 - Descarga e installa **[Microsoft Visual Studio Community 2019](https://visualstudio.microsoft.com/es/)** con los paquetes por defecto **`Node.js`** y **`C++`** y con los componentes **`CMake, MSVC v.140 - VS 2015`**. Si el minero no funciona con estos paquetes, entonces necesita instalar componentes adicionales como **`MSVC v.142 VS 2019, C++ ATL, C++/CLI, Java Script Diagnostic y Python Panel`**.
 
-### 2. Descarga el minero BCHD
+### 2. Descarga el minero BCHD o el JT-miner
 
-* :
-    - **`cd ..`** luego *Enter*.
-    - **`cd ..`** luego *Enter*.
-* Una vez en a Unidad C copia y pega el siguiente comando en la terminal del símbolo del sistema de PowerShell:
+* Tienes tres mineros disponibles en este repositorio para que comiences a minar BTCL. Ya todos estan configurados para ser corridos directamente. Puedes descargar el:
 
-    - **`git clone https://github.com/bitcoinlatino/mist-miner.git`** luego *Enter*.
+    * **`mist-kasumi-JT-miner`**
     
-    - Esto descargará el **mist-miner** en la Unidad C de la PC.
-### Mining on Windows
+    - **`maze-bchd-miner`**
+    
+    - **`bchd-mist-master`**
+    
+ * Una vez que descargues cualquiera de los tres, descomprime la carpeta del minero en la **`Unidad Local C`** del PC
 
-- Download and install [Nodejs](https://nodejs.org/en/)
 
-- Download and install [Git](https://gitforwindows.org/)
+### 3. Configura la Wallet para Minar BTCL en la `Electron Cash SLP Edition`
 
-- Download and install [Microsoft Visual Studio Community 2019](https://visualstudio.microsoft.com/en/) with Node.js and C++ desktop defaults packages and at least C++, CMake and MSVC v.140 - VS 2015. If the miner won't work you need to add more features: MSVC v.142 VS 2019, C++ ATL, C++/CLI, Java Script diagnostic and maybe Python panel: default package
+* Descarga la **[`Electron Cash SLP Edition`](https://simpleledger.cash/project/electron-cash-slp-edition/)** y crea una wallet normal; puedes colocarle un nombre relacionado con la moneda que vas a minar que es Bitcoin Latino BTCL. Recuerda que debes asegurarte de guardar tu **`frase semilla de 12 palabras`** ya que como todas las wallet de bitcoin cash y SLP esta es de no custodia.
 
-- Download mazebchdminer.zip from this repository (view code) and unzip the miner to drive C _(or dslpbchdminer.zip - if you want to mine dSLP)
+* Guarda la carpeta de la Electron Cash en la Unidad C de la PC.
 
-- Go to C://mazebchdminer and open .env file (e.g. in notepad), paste your WIF (your wallet private key)
+* Abre la wallet recién creada y dale click al submenú **`Direcciones`**.
 
-- Open Windows PowerShell (Windows X) and type:
+    - Dale **`click derecho`** en la dirección de **`index 0`** y luego click en **`clave privada`** en la subventana que se abre.
+    
+    - Introduce la contraseña de tu wallet y copia la **`clave privada`** de la ventana que se abre. Las clave privada empieza con **K** o **L**.
+    
+    - Ve hasta la Unidad Local C de la PC y abre la carpeta del minero que descargaste en el **`paso 2`**.
+    
+    - Dentro de la carpeta del minero dale **`click derecho`** a el archivo **`.env`** y dale editar con un editor de código. Si no tienes uno instalado, te recomiendo que descargues **[`Notepad++`](https://notepad-plus-plus.org/downloads/).**
+    
+    - Pega tu clave privada en WIF dentro de las comillas. Debe verse de la siguiente manera: **`WIF="Kansadjasd767263764..."`**
+    
+    - No modifiques nada más, guarda los cambios y cierra el editor.
 
-cd ..
+### 4. Coloca Fondos en BCH en la wallet de minería
 
-cd  ..
+Para recibir la recompensa de la minería de BTCL necesitas pagar una comisión o fee por cada bloque minado exitosamente de BTCL. La comisión es de **`0.00001324`** por cada bloque minado de BTCL, que resulta de la diferencia de **`0.00001870-0.00000546`**.
 
-cd mazebchdminer
+* Nuevamente dentro de la **`Electron Cash SLP`**, **`click derecho`** en la dirección de **`index 0`** y luego escoge **`copiar dirección`** de la ventana que se abre.
 
-Run commands:
+* Abre o crea una nueva wallet (diferente a la de la minería) con la Electron Cash SLP, la cual tenga suficientes fondos en BCH disponibles.
 
-npm i
+* Ve hasta el submenú **`Enviar`** y en el campo **`Pagar a`** pega la dirección de tu wallet de minería; la que acabas de copiar en el paso anterior.
 
-_Ignore errors. Do not run npm audit fix !_
+* Luego añade la cantidad a enviar de 0.00001870 BCH, debe verse de la siguiente manera:
 
-npm start
+    * **`simpleledger:qpasd8a7sdasdjkasd7as7dd,0.00001870`**
+
+* Ahora repite **`simpleledger:qpasd8a7sdasdjkasd7as7dd,0.00001870`** en el mismo campo **`Pagar a`** muchas veces, por ejemplo unas 100 veces.
+
+* Debería verse dela siguiente manera:
+
+    ```
+    simpleledger:qpasd8a7sdasdjkasd7as7dd,0.00001870
+    simpleledger:qpasd8a7sdasdjkasd7as7dd,0.00001870
+    simpleledger:qpasd8a7sdasdjkasd7as7dd,0.00001870
+    simpleledger:qpasd8a7sdasdjkasd7as7dd,0.00001870
+    simpleledger:qpasd8a7sdasdjkasd7as7dd,0.00001870
+    simpleledger:qpasd8a7sdasdjkasd7as7dd,0.00001870
+    simpleledger:qpasd8a7sdasdjkasd7as7dd,0.00001870
+    ```
+
+* En el campo **`BCH Amount`**, si repetiste 100 veces debes tener **`0.001870`**, borra y coloca una pequeña cantidad de BCH **`(0.00001000 estará bien)`**.
+
+* Asegúrate de tener un saldo de **`0.002 BCH como mínimo en esta wallet`**, para pagar la comisión de la red y poder fondear tu wallet de minería que configuraste en el **`paso 3`**.
+
+* Asegurate de no tener errores y luego dale click en **`Enviar`**.
+
+### 5. Instala las dependencias para correr el minero
+
+* Abre la terminal **`PowerShell de Windows`** copia y pega los siguientes comandos:
+
+    - **`cd ..`** luego *Enter*.
+    
+    - **`cd ..`** luego *Enter*.
+    
+    - **`cd y el nombre exacto de la carpeta del minero`** luego *Enter*. Ejemplo
+
+    - **`npm install`** luego *Enter*.
+    
+    - **`npm i`** luego *Enter*.
+    
+     - **`npm run tsc`** luego *Enter*.
+     
+     - **`npm install npm@latest -g`** luego *Enter*.
+
+### 7. Inicia la minería de BTCL
+
+* Dentro de la terminal del **`PowerShell`** escribe el comando:
+
+    * **`npm start`** para inciar el minero.
+    
+    * Si todo lo hiciste bien el minero sincroniza la altura de BTCL con la blockchain de Bitcoin Cash y comineza a descargar todas las txid en la red BTCL, debe verse:
+    
+    * **`Downloading txid`** muchos txid hasta llegar a la última transacción.
+    
+    * Pronto comenzarás a recibir la recompensa de bloque por minar BTCL. **`Los BTCL minados van directo a tu wallet de la Electron Cash SLP Edition`**, la que configuraste en el **`Paso 4`**.
 
 ### Mining on Android phone
 
