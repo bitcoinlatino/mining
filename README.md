@@ -150,7 +150,7 @@ Para recibir la recompensa de la minería de BTCL necesitas pagar una comisión 
 
     * **`npm start`** para inciar el minero.
     
-    * Si todo lo hiciste bien el minero sincroniza la altura de **`BTCL con la blockchain de Bitcoin Cash`** y comineza a descargar todas las txid en la red BTCL, debe verse:
+    * Si todo lo hiciste bien el minero sincroniza la altura de **`BTCL con la blockchain de Bitcoin Cash`** y comienza a descargar todas las txid en la red BTCL, debe verse:
     
         * **`Downloading txid`** muchos txid hasta llegar a la última transacción.
     
