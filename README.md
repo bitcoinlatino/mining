@@ -132,15 +132,17 @@ Para recibir la recompensa de la minería de BTCL necesitas pagar una comisión 
     
     - **`cd ..`** luego *Enter*.
     
-    - **`cd y el nombre exacto de la carpeta del minero`** luego *Enter*. Ejemplo
+    - **`cd y el nombre exacto de la carpeta del minero que descargaste`**. Ejemplo si descargaste el JT-miner el comando correcto sería:
+    
+    - **`cd mist-kasumi-JT-miner`** luego *Enter*. Luego los siguientes comandos:
 
-    - **`npm install`** luego *Enter*.
+        - **`npm install`** luego *Enter*.
     
-    - **`npm i`** luego *Enter*.
+        - **`npm i`** luego *Enter*.
     
-     - **`npm run tsc`** luego *Enter*.
+        - **`npm run tsc`** luego *Enter*.
      
-     - **`npm install npm@latest -g`** luego *Enter*.
+        - **`npm install npm@latest -g`** luego *Enter*.
 
 ### 7. Inicia la minería de BTCL
 
