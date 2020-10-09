@@ -146,15 +146,16 @@ Para recibir la recompensa de la minería de BTCL necesitas pagar una comisión 
 
 ### 7. Inicia la minería de BTCL
 
-* Dentro de la terminal del **`PowerShell`** escribe el comando:
+* Ya con todas las dependencias instaladas en la carpeta del minero en la terminal **`PowerShell`** escribe el comando:
 
     * **`npm start`** para inciar el minero.
     
-    * Si todo lo hiciste bien el minero sincroniza la altura de BTCL con la blockchain de Bitcoin Cash y comineza a descargar todas las txid en la red BTCL, debe verse:
+    * Si todo lo hiciste bien el minero sincroniza la altura de **`BTCL con la blockchain de Bitcoin Cash`** y comineza a descargar todas las txid en la red BTCL, debe verse:
     
-    * **`Downloading txid`** muchos txid hasta llegar a la última transacción.
+        * **`Downloading txid`** muchos txid hasta llegar a la última transacción.
     
-    * Pronto comenzarás a recibir la recompensa de bloque por minar BTCL. **`Los BTCL minados van directo a tu wallet de la Electron Cash SLP Edition`**, la que configuraste en el **`Paso 4`**.
+    * Pronto comenzarás a recibir la recompensa de bloque por minar BTCL. **`Los BTCL minados van directo a tu wallet de la Electron Cash SLP Edition`**, la que configuraste en el **`Paso 3`**.
+    
 
 ### Mining on Android phone
 
@@ -277,4 +278,4 @@ _I will update this tutorial if I find bugs or improvements_
 
 Have fun
 
-_B_S_Z_
+`*Created by*` **[`El_Bitcoiner_CMS`](https://t.me/El_Bitcoiner_CMS)**
