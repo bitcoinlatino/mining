@@ -1,17 +1,26 @@
-## MAZE mining environment and tutorial
-### MAZE is a decentralized, mineable, proof-of-work SLP token based on [Mistcoin](https://mistcoin.org/)
+# BTCL Bitcoin Latino
 
-MAZE Token id: bb553ac2ac7af0fcd4f24f9dfacc7f925bfb1446c6e18c7966db95a8d50fb378
+*Primer moneda virtual mineable de Latinoamérica usando el estándar SLP y la prueba de trabajo del contrato covenant_1 introducido por* **[mistcoin.org](https://mistcoin.org)**
 
-MAZE Token contract script environment:
-- MINER_COVENANT_V1="5779820128947f777601207f75597982012c947f757601687f777678827758947f7576538b7f77765c7982777f011179011179ad011179828c7f756079a8011279bb011479815e7981788c88765b79968b0114795e795279965480880400000000011579bc7e0112790117797eaa765f797f757681008854011a797e56797e170000000000000000396a04534c50000101044d494e54200113797e030102087e54797e0c22020000000000001976a914011879a97e0288ac7e0b220200000000000017a9145379a97e01877e527952797e787eaa607988587901127993b175516b6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6c"
-- TOKEN_INIT_REWARD_V1=800000000
-- TOKEN_HALVING_INTERVAL_V1=4320
-- MINER_DIFFICULTY_V1=3
-- TOKEN_START_BLOCK_V1=645065
-- TOKEN_ID_V1="bb553ac2ac7af0fcd4f24f9dfacc7f925bfb1446c6e18c7966db95a8d50fb378"
+## Ambiente de minería de BTCL
 
-### MAZE Reward Schedule:
+* **BTCL id:** [`20e8e13347a76f6041bf7d31b04a7bbb7e2deb5d95e15ae8619179b3552ca02a`](https://simpleledger.info/token/20e8e13347a76f6041bf7d31b04a7bbb7e2deb5d95e15ae8619179b3552ca02a)
+
+* **BTCL contrato covenant script:**
+
+    - **MINER_COVENANT_V1**=`"5779820128947f777601207f75597982012c947f757601687f777678827758947f7576538b7f77765c7982777f011179011179ad011179828c7f756079a8011279bb011479815e7981788c88765b79968b0114795e795279965480880400000000011579bc7e0112790117797eaa765f797f757681008854011a797e56797e170000000000000000396a04534c50000101044d494e54200113797e030102087e54797e0c22020000000000001976a914011879a97e0288ac7e0b220200000000000017a9145379a97e01877e527952797e787eaa607988587901127993b175516b6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6c"`
+
+    - **TOKEN_INIT_REWARD_V1**=`800000000`
+
+    - **TOKEN_HALVING_INTERVAL_V1**=`4320`
+
+    - **MINER_DIFFICULTY_V1**=`3`
+
+    - **TOKEN_START_BLOCK_V1**=`655223`
+
+    - **TOKEN_ID_V1**=`"20e8e13347a76f6041bf7d31b04a7bbb7e2deb5d95e15ae8619179b3552ca02a"`
+
+## BTCL Calendario de Recompensa:
 
 Token Height | MAZE Reward
 
@@ -33,63 +42,31 @@ Token Height | MAZE Reward
 
 34560< | ...
 
-MAZE contract script before removing dummy variables and nips not optimized -
-0511111111110a33333333333333333333040008af2f5302e01003c9d7095779820128947f777601207f75597982012c947f757601687f777678827758947f7576538b7f77765c7982777f011179011179ad011179828c7f756079a8011279bb011479815e7981788c88765b79968b0114795e795279965480880400000000011579bc7e0112790117797eaa765f797f757681008854011a797e56797e170000000000000000396a04534c50000101044d494e54200113797e030102087e54797e0c22020000000000001976a914011879a97e0288ac7e0b220200000000000017a9145379a97e01877e527952797e787eaa607988587901127993b17551777777777777777777777777777777777777777777777777777777777777
 
-MAZE contract script before removing dummy variables and nips optimized -
-0511111111110a33333333333333333333040008af2f5302e01003c9d7095779820128947f777601207f75597982012c947f757601687f777678827758947f7576538b7f77765c7982777f011179011179ad011179828c7f756079a8011279bb011479815e7981788c88765b79968b0114795e795279965480880400000000011579bc7e0112790117797eaa765f797f757681008854011a797e56797e170000000000000000396a04534c50000101044d494e54200113797e030102087e54797e0c22020000000000001976a914011879a97e0288ac7e0b220200000000000017a9145379a97e01877e527952797e787eaa607988587901127993b175516b6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6c
+## Introduction a la minería con el Minero BCHD
 
-MAZE was created as an experiment. If you can't "catch" Mist you can try with Maze or [dSLP](https://hackmd.io/@mazetoken/r1EcUwdIv)
+Este es un fork de la **`versión 0.0.4`** del minero oficial que se usa en Mistcoin www.mistcoin.org
 
-MAZE [Telegram group](https://t.me/mazemining)
+## Tutorial - Como Minar BTCL en Windows o en un teléfono Android
 
-_MAZE TOKEN 2020, created by [B_S_Z](https://t.me/b_s_z)_
+* Este tutorial es para empezar a minar BTCL en windows.
 
+### 1.Instala los Paquetes
 
-## Tutorial - how to mine MAZE SLP token on Windows or Android phone
+- Descarga e installa **[NodeJS](https://nodejs.org/en/)**
+- Descarga e installa **[Git](https://gitforwindows.org/)**
+- Descarga e installa **[Microsoft Visual Studio Community 2019](https://visualstudio.microsoft.com/es/)** con los paquetes por defecto **`Node.js`** y **`C++`** y con los componentes **`CMake, MSVC v.140 - VS 2015`**. Si el minero no funciona con estos paquetes, entonces necesita instalar componentes adicionales como **`MSVC v.142 VS 2019, C++ ATL, C++/CLI, Java Script Diagnostic y Python Panel`**.
 
-_v.3.0_
+### 2. Descarga el minero BCHD
 
-Download Mist [BCHD miner](https://mistcoin.org) - you will need to change .env file or download Maze BCHD miner (mazebchdminer.zip) from this repository (that is the same miner but prepared for mining Maze and patched for BigNumber error and unwanted satoshis dust)
+* :
+    - **`cd ..`** luego *Enter*.
+    - **`cd ..`** luego *Enter*.
+* Una vez en a Unidad C copia y pega el siguiente comando en la terminal del símbolo del sistema de PowerShell:
 
-_You will need to use a command line_
-
-### Prepare your Electron Cash SLP desktop wallet for mining
-
-- Download [Electron Cash SLP wallet](https://simpleledger.cash/project/electron-cash-slp-edition/)
-
-- Create two wallets in Electron Cash, e.g. wallet_1 (mining wallet) and wallet_2 (funding wallet)
-
-- Open wallet_2 (funding wallet), choose an address and send some BCH (e.g. 0.00025000) to this address
-
-- Open wallet_1 (mining wallet), choose two addresses. One address (mining address) will be for your mining coins (0.00001870). The second address (BCH address) will be for BCH (you will need BCH if you would like to send your tokens from your wallet). Send, to the mining address, from wallet_2, multiple 0.00001870 BCH in one transanction, e.g. paste in send tab pay to field: 
-
-simpleledger:yourminingaddress,0.00001870
-
-simpleledger:yourminingaddress,0.00001870
-
-simpleledger:yourminingaddress,0.00001870
-
-simpleledger:yourminingaddress,0.00001870
-
-simpleledger:yourminingaddress,0.00001870
-
-simpleledger:yourminingaddress,0.00001870
-
-simpleledger:yourminingaddress,0.00001870
-
-simpleledger:yourminingaddress,0.00001870
-
-simpleledger:yourminingaddress,0.00001870
-
-simpleledger:yourminingaddress,0.00001870
-
-_in BCH amount field you can type e.g. 0.00001000_
-
-- Right click on your mining address (in wallet_1) and get your private key (WIF)
-
-- Don't send BCH to your mining address, otherwise you could pay high fee or you won't mine anything
-
+    - **`git clone https://github.com/bitcoinlatino/mist-miner.git`** luego *Enter*.
+    
+    - Esto descargará el **mist-miner** en la Unidad C de la PC.
 ### Mining on Windows
 
 - Download and install [Nodejs](https://nodejs.org/en/)
