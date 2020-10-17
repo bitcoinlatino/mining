@@ -157,7 +157,7 @@ Para recibir la recompensa de la minería de BTCL necesitas pagar una comisión 
     * Pronto comenzarás a recibir la recompensa de bloque por minar BTCL. **`Los BTCL minados van directo a tu wallet de la Electron Cash SLP Edition`**, la que configuraste en el **`Paso 3`**.
     
 
-### Mining on Android phone
+## Minando BTCL en un teléfono Android
 
 Go to Google Play Store and download UserLAnd app
 
