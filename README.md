@@ -157,7 +157,7 @@ Para recibir la recompensa de la minería de BTCL necesitas pagar una comisión 
     * Pronto comenzarás a recibir la recompensa de bloque por minar BTCL. **`Los BTCL minados van directo a tu wallet de la Electron Cash SLP Edition`**, la que configuraste en el **`Paso 3`**.
     
 
-## Minando BTCL en un teléfono Android
+## Minando BTCL en un Teléfono Android
 
 Go to Google Play Store and download UserLAnd app
 
@@ -169,11 +169,11 @@ Go to Google Play Store and download UserLAnd app
 
 - Choose SSH
 
-### Run commands:
+### Run commands: (After one command dale *Enter*)
 
-sudo apt-get update && sudo apt-get dist-upgrade
+`sudo apt-get update && sudo apt-get dist-upgrade`
 
-sudo apt-get install git
+`sudo apt-get install git`
 
 sudo apt-get install wget
 
@@ -197,11 +197,11 @@ mkdir miner
 
 cd miner
 
-wget https://github.com/mazetoken/mining/raw/master/mazebchdminer.zip
+wget https://github.com/bitcoinlatino/mining/raw/master/maze-bchd-miner.zip
 
-wget https://github.com/mazetoken/mining/raw/master/dslpbchdminer.zip  _(if you want to mine dSLP)_
+wget https://github.com/mazetoken/mining/raw/master/mazebchdminer.zip  _(if you want to mine MAZE Token)_
 
-unzip mazebchdminer.zip
+unzip maze-bchd-miner.zip
 
 _mazebchdminer directory will be created_
 
