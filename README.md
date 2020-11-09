@@ -159,7 +159,7 @@ Para recibir la recompensa de la minería de BTCL necesitas pagar una comisión 
 
 ## Minando BTCL en un Teléfono Android
 
-Go to Google Play Store and download UserLAnd app
+Go to Google Play Store and download [UserLAnd](https://play.google.com/store/apps/details?id=tech.ula&hl=es) app
 
 - Install the app
 
